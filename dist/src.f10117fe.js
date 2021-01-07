@@ -128,8 +128,8 @@ exports.CustomMap = void 0;
 var CustomMap =
 /** @class */
 function () {
-  function CustomMap() {
-    this.googleMap = new google.maps.Map(document.getElementById('map'), {
+  function CustomMap(divId) {
+    this.googleMap = new google.maps.Map(document.getElementById(divId), {
       zoom: 1,
       center: {
         lat: 0,
@@ -152,7 +152,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var CustomMap_1 = require("./CustomMap");
 
-new CustomMap_1.CustomMap();
+new CustomMap_1.CustomMap('map');
 },{"./CustomMap":"src/CustomMap.ts"}],"../../../../../.nvm/versions/node/v14.15.1/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
